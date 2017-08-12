@@ -30,15 +30,17 @@ $('.smooth').on('click', function() {
 <!--anchors used to link buttons to different parts of the page-->
 
 <!--it's a header-->
-<div id="nav">
-	<ul>
-		<li><a href="#main">Main1</a></li>
-		<li><a href="#choose">Choose1</a></li>
-		<li><a href="#char1">Character1</a></li>
-		<li><a href="#char2">Character2</a></li>
-		<li><a href="#char3">Character3</a></li>
-	</ul>
-</div>
+<header id="header">
+	<div id="nav">
+		<ul>
+			<li><a href="#main">Main1</a></li>
+			<li><a href="#choose">Choose1</a></li>
+			<li><a href="#char1">Character1</a></li>
+			<li><a href="#char2">Character2</a></li>
+			<li><a href="#char3">Character3</a></li>
+		</ul>
+	</div>
+</header>
 
 
 <!--starting the pages-->
@@ -56,11 +58,12 @@ $('.smooth').on('click', function() {
 			<img id="saltIcon" src="img/saltIcon.png">
 			<p class="desc"> Salt, it symbolizes the hate you have for everyone around you. You want to both figuatively and literaly shove salt in their wounds. </p>
 			<button id ="saltybutton" onclick="onclicksaltybutton()">SALTY</button>
+			<a href=#saltchar>CHARACTER ONE </A>
 		</div>
 
 		<div id="twothird">
 			<img id="sarcasmIcon"src="img/sarcasmIcon.png">
-			<p class="desc"> Sarcasm, the only defense angsty teenagers have against their loathing sel-depreciation </p>
+			<p class="desc"> Sarcasm, the only defense angsty teenagers have against their loathing self-depreciation </p>
 			<button id ="sarkybutton" onclick="onclicksarkybutton()">SARCASTIC</button>
 		</div>
 
@@ -77,10 +80,14 @@ $('.smooth').on('click', function() {
 		<a id="choose" class="smooth"></a>
 	</div>
 
-	<div id="page3">
-		<a id="char1" class="smooth"></a>
-		<img id="saltstat" src="img/SALTY.png">
-	</div>
+
+		<div id="page3">
+
+			<a id="char1" class="smooth"></a>
+			<img id="saltstat" src="img/SALTY.png">
+			<a id="saltchar">	</a>
+		</div>
+
 
 		<!--this is where we jump to page 3-->
 		<span id='jumppage3'></span>
