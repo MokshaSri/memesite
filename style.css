@@ -4,6 +4,18 @@ background-image: url('../img/fullbg.png');
 
 /* this has stuff before it */
 
+#startbutton {
+	background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 #saltybutton, #sarkybutton, #wholesomebutton {
 	background-color: white;
@@ -75,4 +87,43 @@ padding-left: 21px;
 	position: relative;
 	float: left;
 	top: 1180px;
+}
+
+#fight {
+	background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#fight2 {
+	background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#fight3 {
+	background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

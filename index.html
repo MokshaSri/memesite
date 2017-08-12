@@ -12,19 +12,21 @@
 	</script>
 </head>
 
-<!--some stuff for scrolling shit-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
+<style>
+	.parallax {
+		/* The image used */
+		background-image: url("img/header-bg.png");
 
-    return false;
-});
-</script>
+		/* Set a specific height */
+		min-height: 5100px; 
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
 
 
 <!--anchors used to link buttons to different parts of the page-->
@@ -33,11 +35,11 @@ $('.smooth').on('click', function() {
 <header id="header">
 	<div id="nav">
 		<ul>
-			<li><a href="#main">Main1</a></li>
-			<li><a href="#choose">Choose1</a></li>
-			<li><a href="#char1">Character1</a></li>
-			<li><a href="#char2">Character2</a></li>
-			<li><a href="#char3">Character3</a></li>
+			<li><a href="#main">Main/a></li>
+			<li><a href="#choose">Choose</a></li>
+			<li><a href="#char1">Character 1</a></li>
+			<li><a href="#char2">Character 2</a></li>
+			<li><a href="#char3">Character 3</a></li>
 		</ul>
 	</div>
 </header>
@@ -47,7 +49,7 @@ $('.smooth').on('click', function() {
 <body>
 	<div id="page1">
 		<a id="main" class="smooth"></a>
-			<button onclick="onclickstart()">START</button>
+		<button id="startbutton" onclick="onclickstart()">START</button>
 
 	</div>
 
@@ -73,40 +75,48 @@ $('.smooth').on('click', function() {
 			<button id ="wholesomebutton" onclick="onclickwholesomebutton()">WHOLESOME</button>
 		</div>
 
-			<!--this is where we jump to page 2, choosing your meme-->
-			<span id='jumppage2'></span>
-			<div style="height: 50px"></div>
+		<!--this is where we jump to page 2, choosing your meme-->
+		<span id='jumppage2'></span>
+		<div style="height: 50px"></div>
 
 		<a id="choose" class="smooth"></a>
 	</div>
 
 
-		<div id="page3">
+	<div id="page3">
 
-			<a id="char1" class="smooth"></a>
-			<img id="saltstat" src="img/SALTY.png">
-			<a id="saltchar">	</a>
-		</div>
-
-
-		<!--this is where we jump to page 3-->
-		<span id='jumppage3'></span>
-			<div style="height: 50px"></div>
-		<img id="sarstat" src="img/SARCASM.png">
-
-	<a href="salt"><div id="page4"></a>
-		<a id="char2" class="smooth"></a>
-		<img id="wholestat" src="img/WHOLESOME.png">
+		<a id="char1" class="smooth"></a>
+		<center> <img id="saltstat" src="img/SALTY.png" width="1200" height=auto> </center>
+		<a id="saltchar">   </a>
 		<a href ="fight.html"><button id="fight">FIGHT</button></a>
 	</div>
 
-	<!--this is where we jump to page 3-->
-		<span id='jumppage4'></span>
-			<div style="height: 50px"></div>
 
+	<!--this is where we jump to page 3-->
+	<span id='jumppage3'></span>
+	<div style="height: 50px"></div>
+
+	<div id="page4">
+		<center><img id="sarstat" src="img/SARCASM.png" width="1200" height=auto margin=auto></center>
+		<a href ="fight.html"><button id="fight2">FIGHT</button></a>
+	</div>   
+	
+
+	<a href="salt"><div id="page4"></a>
+	<a id="char2" class="smooth"></a>
+	
 	<div id="page5">
-		<a id="char3" class="smooth"></a>
-	</div>
+	 <center><img id="wholestat" src="img/WHOLESOME.png" width="1200" height=auto></center>
+	 <a href ="fight.html"><button id="fight3">FIGHT</button></a>
+ </div>
+
+ <!--this is where we jump to page 3-->
+ <span id='jumppage4'></span>
+ <div style="height: 3200px"></div>
+
+ <div id="page5">
+	<a id="char3" class="smooth"></a>
+</div>
 </body>
 
 </html>
