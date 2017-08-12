@@ -4,43 +4,80 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script src="js/index.js"></script>
 	<title>Meme Dreams Beta</title>
 	<script>
 	</script>
 </head>
 
+<!--some stuff for scrolling shit-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+
+
+<!--anchors used to link buttons to different parts of the page-->
+
+<!--it's a header-->
+<div id="nav">
+	<ul>
+		<li><a href="#main">Main1</a></li>
+		<li><a href="#choose">Choose1</a></li>
+		<li><a href="#char1">Character1</a></li>
+		<li><a href="#char2">Character2</a></li>
+		<li><a href="#char3">Character3</a></li>
+	</ul>
+</div>
+
+
 <!--starting the pages-->
 <body>
-	<div id="slide1">
-		<div class="content">
-			<button type="startbutton">START</button>
-		</div> 
-	</div> 
+	<div id="page1">
+		<a id="main" class="smooth"></a>
+			<button onclick="onclickstart()">START</button>
 
-	<div id="slide2">
-		<div class="content">
-			<button type="saltybutton">SALTY</button>
-			<button type="sarkybutton">SARCASTIC</button>
-			<button type="wholesomebutton">WHOLESOME</button>
-		</div>
 	</div>
 
-	<div id="slide3">
-		<div class="content">
-			<div class="saltychar"></div>
-		</div>
+
+	<div id="page2">
+		<!-- One of the selections --> 
+		<div id="onethird"></div>
+		<div id="twothird"></div>
+		<div id="threethird"></div>
+
+			<!--this is where we jump-->
+			<span id='jumppage2'></span>
+			<div style="height: 50px"></div>
+
+		<a id="choose" class="smooth"></a>
+		<button type="saltybutton">SALTY</button>
+		<button type="sarkybutton">SARCASTIC</button>
+		<button type="wholesomebutton">WHOLESOME</button>
 	</div>
 
-	<div id="slide4">
-		<div class="content">
-			<div class="sarkychar"></div>
-		</div>
-	</div>	
+	<div id="page3">
+		<a id="char1" class="smooth"></a>
+		Contact page content goes here.
+	</div>
 
-	<div id="slide5">
-		<div class="content">
-			<div class="wholesomechar"></div>
-		</div>
+	<div id="page4">
+		<a id="char2" class="smooth"></a>
+		Contact page content goes here.
+	</div>
+
+	<div id="page5">
+		<a id="char3" class="smooth"></a>
+		Contact page content goes here.
 	</div>
 </body>
+
 </html>

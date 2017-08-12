@@ -4,11 +4,25 @@ background-image: url('../img/fullbg.png');
 
 /* this has stuff before it */
 
+#onethird, #twothird, #threethird {
+	float: left;
+	background-color: black;
+	margin: 20px;
+	height: 900px;
+	width: 350px;
+	position: relative;
+	top: 900px;
+	
+}
+
+#saltybutton, #sarkybutton, #wholesomebutton {
+	
+}
+
 #slide1{
 background-image:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-
 height: 600px;
 margin: 0;
-padding: 200px 0 260px 0;
+padding: 280px 0 1000px 0;
 background-size: cover;
 }
