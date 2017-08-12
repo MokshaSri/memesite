@@ -29,5 +29,10 @@ background-image: url('../img/fullbg.png');
 	width: 300px;
 	position: relative;
 	top: 900px;
+}
 
+#saltIcon, #sarcasmIcon, #wholesomeIcon {
+	margin: 20px;
+	display: inline-block;
+	
 }
