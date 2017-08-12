@@ -15,15 +15,19 @@ background-image: url('../img/fullbg.png');
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
+	}
+
 /*none of this works*/
 
 #onethird, #twothird, #threethird {
 	float: left;
+	text-align: center;
 	background-color: black;
 	margin: 20px;
+	padding:30px;
 	height: 600px;
-	width: 350px;
+	width: 300px;
 	position: relative;
 	top: 900px;
+
 }

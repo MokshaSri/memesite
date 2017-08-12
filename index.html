@@ -52,18 +52,27 @@ $('.smooth').on('click', function() {
 
 	<div id="page2">
 		<!-- One of the selections --> 
-		<div id="onethird"></div>
-		<div id="twothird"></div>
-		<div id="threethird"></div>
+		<div id="onethird">
+			<button id ="saltybutton" onclick="onclicksaltybutton()"">SALTY</button>
+		</div>
+
+		<div id="twothird">
+			<button id ="sarkybutton" onclick="onclicksarkybutton()">SARCASTIC</button>
+		</div>
+
+		<div id="threethird">
+			<button id ="wholesomebutton" onclick="onclickwholesomebutton()">WHOLESOME</button>
+		</div>
 
 			<!--this is where we jump to page 2, choosing your meme-->
 			<span id='jumppage2'></span>
 			<div style="height: 50px"></div>
 
 		<a id="choose" class="smooth"></a>
-		<button onclick="onclicksaltybutton()">SALTY</button>
-		<button onclick="onclicksarkybutton()">SARCASTIC</button>
-		<button onclick="onclickwholesomebutton()">WHOLESOME</button>
+		<!--<button id ="saltybutton" onclick="onclicksaltybutton()"">SALTY</button>
+		<button id ="sarkybutton" onclick="onclicksarkybutton()">SARCASTIC</button>
+		<button id ="wholesomebutton" onclick="onclickwholesomebutton()">WHOLESOME</button>
+		-->
 	</div>
 
 	<div id="page3">
