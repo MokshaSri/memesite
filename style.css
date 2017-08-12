@@ -29,5 +29,25 @@ background-image: url('../img/fullbg.png');
 	width: 300px;
 	position: relative;
 	top: 900px;
+}
 
+#saltIcon, #sarcasmIcon, #wholesomeIcon {
+	margin: 50px;
+	display: inline-block;
+	position: relative;
+
+}
+
+.desc {
+	color: white;
+	position: relative;
+	padding: 20px;
+	height: auto;
+	overflow: auto;
+}
+
+#saltstat, #sarstat, #wholestat {
+	position: relative;
+	float: left;
+	top: 1180px;
 }
