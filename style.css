@@ -4,25 +4,26 @@ background-image: url('../img/fullbg.png');
 
 /* this has stuff before it */
 
+#saltybutton, #sarkybutton, #wholesomebutton {
+	background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*none of this works*/
+
 #onethird, #twothird, #threethird {
 	float: left;
 	background-color: black;
 	margin: 20px;
-	height: 900px;
+	height: 600px;
 	width: 350px;
 	position: relative;
 	top: 900px;
-	
-}
-
-#saltybutton, #sarkybutton, #wholesomebutton {
-	
-}
-
-#slide1{
-background-image:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
-height: 600px;
-margin: 0;
-padding: 280px 0 1000px 0;
-background-size: cover;
 }
