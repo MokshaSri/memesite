@@ -1,0 +1,19 @@
+body{
+background-image: url('../img/battle.png');
+background-repeat: no-repeat;
+}
+
+#attack1, #attack2, #home {
+  background-color: white;
+    border: none;
+    color: #a72224;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    bottom
+}
